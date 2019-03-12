@@ -80,8 +80,7 @@ open class AKImageCropperView: UIView, UIScrollViewDelegate, UIGestureRecognizer
     /** Reversed frame + edgeInsets direct to current rotation angle */
     
     var reversedFrameWithInsets: CGRect {
-//        return UIEdgeInsetsInsetRect(reversedRect, reversedEdgeInsets)
-        return reversedRect.inset(by: reversedEdgeInsets)
+        return UIEdgeInsetsInsetRect(reversedRect, reversedEdgeInsets)
     }
     
     // MARK: -
